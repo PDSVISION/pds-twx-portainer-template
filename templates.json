@@ -1,5 +1,4 @@
-{
-  "templates": [
+[
     {
       "type": 2,
       "title": "CockroachDB",
@@ -14,4 +13,4 @@
       }
     }
   ]
-}
+
