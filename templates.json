@@ -1,16 +1,14 @@
-[
-    {
-      "type": 2,
-      "title": "CockroachDB",
-      "description": "CockroachDB cluster",
-      "note": "Deploys an insecure CockroachDB cluster, please refer to CockroachDB documentation for production deployments.",
-      "categories": ["database"],
-      "platform": "linux",
-      "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/cockroachdb/docker-stack.yml"
-      }
-    }
-  ]
-
+{
+	"version": "2",
+	"templates": [
+        {
+            "type": 2,
+            "title": "pds-twx-platform-h2",
+            "description": "ThingWorx H2",
+            "repository": {
+                "url": "https://github.com/PDSVISION/pds-twx-docker-composes",
+                "stackfile": "docker-compose-h2.yml"
+            }
+        }
+    ]
+}
