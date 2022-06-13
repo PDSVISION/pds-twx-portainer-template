@@ -1,4 +1,4 @@
-{
+[{
   "type": 2,
   "title": "CockroachDB",
   "description": "CockroachDB cluster",
@@ -11,3 +11,4 @@
     "stackfile": "stacks/cockroachdb/docker-stack.yml"
   }
 }
+]
