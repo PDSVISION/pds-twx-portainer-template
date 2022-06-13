@@ -1,29 +1,13 @@
 {
-  "version": "2",
-  "templates": [
-    {
-      "type": "2",
-      "title": "pds-twx-platform-h2",
-      "description": "ThingWorx H2",
-      "name": "pds-twx-platform-h2-",
-      "repository": {
-        "url": "https://github.com/PDSVISION/pds-twx-docker-composes",
-        "stackfile": "docker-compose-h2.yml"
-      },
-      "platform": "linux",
-      "categories": ["thingworx"],
-      "env": [
-        {
-          "name": "LS_USERNAME",
-          "label": "PTC Username",
-          "description": "Username used to retrive license."
-        },
-        {
-          "name": "LS_PASSWORD",
-          "label": "PTC Password",
-          "description": "Password used to retrive license."
-        }
-      ]
-    }
-  ]
+  "type": 2,
+  "title": "CockroachDB",
+  "description": "CockroachDB cluster",
+  "note": "Deploys an insecure CockroachDB cluster, please refer to CockroachDB documentation for production deployments.",
+  "categories": ["database"],
+  "platform": "linux",
+  "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
+  "repository": {
+    "url": "https://github.com/portainer/templates",
+    "stackfile": "stacks/cockroachdb/docker-stack.yml"
+  }
 }
