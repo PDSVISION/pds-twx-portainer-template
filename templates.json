@@ -4,8 +4,8 @@
 		{
 			"type": 1,
 			"title": "pds-twx-platform-h2",
-			"description": "ThingWorx H2",
-			"image": "ghcr.io/pdsvision/thingworx-platform-h2:9.3.0",
+			"description": "ThingWorxH2",
+			"image": "ghcr.io/pdsvision/thingworx-platform-h2:9.3.0"
 		}
 	]
 }
