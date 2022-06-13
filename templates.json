@@ -1,16 +1,17 @@
 {
   "templates": [
     {
-    "type": 2,
-    "title": "CockroachDB",
-    "description": "CockroachDB cluster",
-    "note": "Deploys an insecure CockroachDB cluster, please refer to CockroachDB documentation for production deployments.",
-    "categories": ["database"],
-    "platform": "linux",
-    "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
-    "repository": {
-      "url": "https://github.com/portainer/templates",
-      "stackfile": "stacks/cockroachdb/docker-stack.yml"
+      "type": 2,
+      "title": "CockroachDB",
+      "description": "CockroachDB cluster",
+      "note": "Deploys an insecure CockroachDB cluster, please refer to CockroachDB documentation for production deployments.",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
+      "repository": {
+        "url": "https://github.com/portainer/templates",
+        "stackfile": "stacks/cockroachdb/docker-stack.yml"
+      }
     }
   ]
 }
