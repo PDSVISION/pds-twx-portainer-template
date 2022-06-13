@@ -1,4 +1,6 @@
-[{
+{
+  "templates": [
+  {
   "type": 2,
   "title": "CockroachDB",
   "description": "CockroachDB cluster",
@@ -12,3 +14,4 @@
   }
 }
 ]
+}
