@@ -9,8 +9,8 @@
       "name": "pds-twx-platform-h2-",
       "logo": "",
       "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "https://github.com/PDSVISION/pds-twx-docker-composes/docker-compose-h2.yml"
+        "url": "https://github.com/PDSVISION/pds-twx-docker-composes",
+        "stackfile": "docker-compose-h2.yml"
       },
       "platform": "linux",
       "categories": ["thingworx"],
