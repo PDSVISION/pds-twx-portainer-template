@@ -2,12 +2,10 @@
   "version": "2",
   "templates": [
     {
+      "type": "2",
       "title": "pds-twx-platform-h2",
       "description": "ThingWorx H2",
-      "note": "",
-      "type": "2",
       "name": "pds-twx-platform-h2-",
-      "logo": "",
       "repository": {
         "url": "https://github.com/PDSVISION/pds-twx-docker-composes",
         "stackfile": "docker-compose-h2.yml"
@@ -25,6 +23,7 @@
           "label": "PTC Password",
           "description": "Password used to retrive license."
         }
+      ]
     }
   ]
 }
