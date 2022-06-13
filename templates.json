@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "templates": [
+    {
+      "title": "pds-twx-platform-h2",
+      "description": "ThingWorx H2",
+      "note": "",
+      "type": "1",
+      "name": "pds-twx-platform-h2-",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/portainer/templates",
+        "stackfile": "https://github.com/PDSVISION/pds-twx-platform-image/docker-compose-h2.yml"
+      },
+      "platform": "linux",
+      "categories": ["thingworx"],
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        }
+    }
+  ]
+}
