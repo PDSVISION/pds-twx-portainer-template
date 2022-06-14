@@ -1,2 +1,2 @@
 # pds-portainer-templates
-Porainer templates
+Portainer templates
