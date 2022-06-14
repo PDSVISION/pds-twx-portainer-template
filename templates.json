@@ -6,7 +6,6 @@
       "title": "ThingWorx H2 9.3.0",
       "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-0-",
-      "categories": ["H2"],
       "platform": "linux",
       "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png"
       "repository": {
@@ -31,7 +30,6 @@
       "title": "ThingWorx H2 9.3.2",
       "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-2-",
-      "categories": ["H2"],
       "platform": "linux",
       "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png"
       "repository": {
