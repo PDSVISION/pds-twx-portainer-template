@@ -2,7 +2,7 @@
   "version": "2",
   "templates": [
     {
-      "type": 2,
+      "type": 3,
       "title": "pds-twx-platform-h2-9-3-0",
       "description": "ThingWorx H2",
       "name": "pds-twx-platform-h2-9-3-0-",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "type": 2,
+      "type": 3,
       "title": "pds-twx-platform-h2-9-3-2",
       "description": "ThingWorx H2",
       "name": "pds-twx-platform-h2-9-3-2-",
