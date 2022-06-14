@@ -2,7 +2,7 @@
   "version": "2",
   "templates": [
     {
-      "type": 2,
+      "type": 3,
       "title": "pds-twx-platform-h2",
       "description": "ThingWorxH2",
       "platform": "linux",
