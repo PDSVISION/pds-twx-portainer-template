@@ -5,6 +5,7 @@
       "type": 3,
       "title": "pds-twx-platform-h2",
       "description": "ThingWorxH2",
+      "name": "pds-twx-platform-h2-",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/PDSVISION/pds-twx-docker-composes",
