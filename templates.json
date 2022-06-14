@@ -4,9 +4,10 @@
     {
       "type": 3,
       "title": "ThingWorx H2 9.3.0",
-      "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
+      "description": "PTC ThingWorx Docker - Image template greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-0-",
       "platform": "linux",
+      "categories": ["ThingWorx", "H2"],
       "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
       "repository": {
         "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
@@ -28,9 +29,10 @@
     {
       "type": 3,
       "title": "ThingWorx H2 9.3.2",
-      "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
+      "description": "PTC ThingWorx Docker - Image template greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-2-",
       "platform": "linux",
+      "categories": ["ThingWorx", "H2"],
       "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
       "repository": {
         "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
