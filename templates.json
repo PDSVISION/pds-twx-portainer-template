@@ -4,7 +4,7 @@
     {
       "type": 3,
       "title": "pds-twx-platform-h2",
-      "description": "ThingWorxH2",
+      "description": "ThingWorx H2",
       "name": "pds-twx-platform-h2-",
       "platform": "linux",
       "repository": {
