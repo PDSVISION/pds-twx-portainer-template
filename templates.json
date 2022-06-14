@@ -3,13 +3,36 @@
   "templates": [
     {
       "type": 3,
-      "title": "pds-twx-platform-h2",
+      "title": "pds-twx-platform-h2-9-3-0",
       "description": "ThingWorx H2",
-      "name": "pds-twx-platform-h2-",
+      "name": "pds-twx-platform-h2-9-3-0-",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
-        "stackfile": "docker-compose-h2.yml"
+        "stackfile": "docker-compose-h2-9-3-0.yml"
+      },
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "pds-twx-platform-h2-9-3-2",
+      "description": "ThingWorx H2",
+      "name": "pds-twx-platform-h2-9-3-2-",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-h2-9-3-2.yml"
       },
       "env": [
         {
