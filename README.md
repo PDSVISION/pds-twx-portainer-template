@@ -6,4 +6,4 @@ https://github.com/PDSVISION/pds-twx-portainer-template/blob/main/templates.json
 App template JSON format documentation: 
 https://docs.portainer.io/advanced/app-templates/format  
 
-![Alt text](images/img.jpg?raw=true "Title")
+[![Alt text]([images/img.jpg](https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/Portainer%20-%20Release%20process.jpg)?raw=true "Title")](https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/Portainer%20-%20Release%20process.jpg)
