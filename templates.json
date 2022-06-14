@@ -3,8 +3,8 @@
   "templates": [
     {
       "type": 3,
-      "title": "pds-twx-platform-h2-9-3-0",
-      "description": "ThingWorx H2",
+      "title": "ThingWorx H2 9.3.0",
+      "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-0-",
       "platform": "linux",
       "repository": {
@@ -26,8 +26,8 @@
     },
     {
       "type": 3,
-      "title": "pds-twx-platform-h2-9-3-2",
-      "description": "ThingWorx H2",
+      "title": "ThingWorx H2 9.3.2",
+      "description": "PTC ThingWorx H2 - Image greated by Fredrik Tell",
       "name": "pds-twx-platform-h2-9-3-2-",
       "platform": "linux",
       "repository": {
