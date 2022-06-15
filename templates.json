@@ -175,6 +175,31 @@
           "description": "Password used to retrive license."
         }
       ]
+    },
+	{
+      "type": 3,
+      "title": "ThingWorx Postgres 9.3.2",
+      "description": "PTC ThingWorx Docker - Image template greated by Fredrik Tell",
+      "name": "pds-twx-platform-postgres-9-3-2-",
+      "platform": "linux",
+      "categories": ["ThingWorx", "Postgres"],
+      "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-postgres-9-3-2.yml"
+      },
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        }
+      ]
     }
   ]
 }
