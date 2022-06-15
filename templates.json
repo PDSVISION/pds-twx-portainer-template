@@ -26,6 +26,31 @@
         }
       ]
     },
+	{
+      "type": 3,
+      "title": "ThingWorx H2 9.2.7",
+      "description": "PTC ThingWorx Docker - Image template greated by Fredrik Tell",
+      "name": "pds-twx-platform-h2-9-2-7-",
+      "platform": "linux",
+      "categories": ["ThingWorx", "H2"],
+      "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-h2-9-2-7.yml"
+      },
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        }
+      ]
+    },
     {
       "type": 3,
       "title": "ThingWorx H2 9.3.0",
