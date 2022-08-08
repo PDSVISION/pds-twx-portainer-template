@@ -173,11 +173,6 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
-        },
-        {
-          "name": "SCRIPT_TIMEOUT",
-          "label": "Script timeout",
-          "description": "Seconds before services timesout."
         }
       ]
     },
