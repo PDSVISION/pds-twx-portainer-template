@@ -23,8 +23,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
 	{
       "type": 3,
@@ -48,8 +63,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
 	{
       "type": 3,
@@ -73,8 +103,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
 	{
       "type": 3,
@@ -98,8 +143,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
     {
       "type": 3,
@@ -124,12 +184,22 @@
           "label": "PTC Password",
           "description": "Password used to retrive license."
         },
-        {
-          "name": "SCRIPT_TIMEOUT",
-          "label": "Script timeout",
-          "description": "Seconds before services timesout."
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
     {
       "type": 3,
@@ -153,8 +223,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
     {
       "type": 3,
@@ -178,8 +263,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
 	{
       "type": 3,
@@ -203,8 +303,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     },
 	{
       "type": 3,
@@ -228,8 +343,23 @@
           "name": "LS_PASSWORD",
           "label": "PTC Password",
           "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
         }
-      ]
+      ],
+	  {
+	     "ports": ["80/tcp"]
+	  }
     }
   ]
 }
