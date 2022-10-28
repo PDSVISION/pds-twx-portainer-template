@@ -37,9 +37,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
 	{
       "type": 3,
@@ -77,9 +75,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
 	{
       "type": 3,
@@ -117,9 +113,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
 	{
       "type": 3,
@@ -157,9 +151,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
     {
       "type": 3,
@@ -197,9 +189,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
     {
       "type": 3,
@@ -237,9 +227,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
     {
       "type": 3,
@@ -277,9 +265,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
 	{
       "type": 3,
@@ -317,9 +303,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     },
 	{
       "type": 3,
@@ -357,9 +341,7 @@
 		  "default": "thingworxvision"
         }
       ],
-	  {
-	     "ports": ["80/tcp"]
-	  }
+	  "ports": ["80/tcp"]
     }
   ]
 }
