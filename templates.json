@@ -532,6 +532,30 @@
         }
       ],
 	  "ports": ["80/tcp"]
+    },
+	{
+      "type": 3,
+      "title": "PTC Kepware Edge 1.6.250.0",
+      "description": "PTC Kepware Edge Docker - Image template created by PDSVISION",
+      "image": "/pdsvision/kepware-edge:1.6.250.0"
+      "registry": "ghcr.io"
+      "name": "pds-kepware-edge-1-6-250-0",
+      "platform": "linux",
+      "categories": ["Kepware"],
+      "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCKepwareLogo.png",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-h2-8-5-0.yml"
+      },
+      "env": [
+        {
+          "name": "EDGEADMINPW",
+          "label": "Admin password",
+          "description": "Password used for the Administrator",
+	  "default": "kepwareedgevision"
+        }
+      ],
+	  "ports": ["57513/tcp","49330/tcp"]
     }
   ]
 }
