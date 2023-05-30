@@ -534,7 +534,7 @@
 	  "ports": ["80/tcp"]
     },
 	{
-		"type": 1,
+		"type": 3,
 		"title": "PTC Kepware Edge 1.6.250.0",
 		"description": "PTC Kepware Edge Docker - Image template created by PDSVISION",
 		"image": "ghcr.io/pdsvision/kepware-edge:1.6.250.0",
