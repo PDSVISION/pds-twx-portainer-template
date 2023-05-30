@@ -537,8 +537,8 @@
       "type": 3,
       "title": "PTC Kepware Edge 1.6.250.0",
       "description": "PTC Kepware Edge Docker - Image template created by PDSVISION",
-      "image": "/pdsvision/kepware-edge:1.6.250.0"
-      "registry": "ghcr.io"
+      "image": "/pdsvision/kepware-edge:1.6.250.0",
+      "registry": "ghcr.io",
       "name": "pds-kepware-edge-1-6-250-0",
       "platform": "linux",
       "categories": ["Kepware"],
