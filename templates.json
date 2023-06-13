@@ -343,6 +343,82 @@
       ],
 	  "ports": ["80/tcp"]
     },
+	{
+      "type": 3,
+      "title": "ThingWorx H2 9.2.10",
+      "description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+      "name": "pds-twx-platform-h2-9-2-10-",
+      "platform": "linux",
+      "categories": ["ThingWorx", "Base", "H2"],
+      "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-h2-9-2-10.yml"
+      },
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
+        }
+      ],
+	  "ports": ["80/tcp"]
+    },
+	{
+      "type": 3,
+      "title": "ThingWorx Postgres 9.2.10",
+      "description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+      "name": "pds-twx-platform-postgres-9-2-10-",
+      "platform": "linux",
+      "categories": ["ThingWorx", "Base", "Postgres"],
+      "logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+      "repository": {
+        "url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+        "stackfile": "docker-compose-postgres-9-2-10.yml"
+      },
+      "env": [
+        {
+          "name": "LS_USERNAME",
+          "label": "PTC Username",
+          "description": "Username used to retrive license."
+        },
+        {
+          "name": "LS_PASSWORD",
+          "label": "PTC Password",
+          "description": "Password used to retrive license."
+        },
+		{
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "description": "Password used for the Administrator",
+		  "default": "thingworxvision"
+        },
+		{
+          "name": "METRICS_PASSWORD",
+          "label": "Metric Password",
+          "description": "Password used for the Metrics user",
+		  "default": "thingworxvision"
+        }
+      ],
+	  "ports": ["80/tcp"]
+    },
     {
       "type": 3,
       "title": "ThingWorx H2 9.2.7",
