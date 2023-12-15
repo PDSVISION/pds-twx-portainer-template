@@ -76,7 +76,7 @@
         }
       ],
 	  "ports": ["80/tcp"]
-    }
+    },
 	  {
       "type": 3,
       "title": "ThingWorx H2 9.4.0",
