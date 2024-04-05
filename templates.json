@@ -3,6 +3,24 @@
 	"templates": [
 		{
 			"type": 3,
+			"title": "Influx - Latest",
+			"description": "Influx Docker - Time series database",
+			"name": "pds-twx-influx-",
+			"platform": "linux",
+			"categories": [
+				"Influx"
+			],
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/Influx.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-influx-latest.yml"
+			},
+			"ports": [
+				"8086/tcp"
+			]
+		},
+		{
+			"type": 3,
 			"title": "ThingWorx Postgres 9.5.0 - Influx",
 			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
 			"name": "pds-twx-platform-postgres-9-5-0-influx-",
