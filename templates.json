@@ -5,7 +5,7 @@
 			"type": 3,
 			"title": "ThingWorx Analytic Descriptive 9.5.0",
 			"description": "PTC ThingWorx Analytic Descriptive Docker - Image template created by Fredrik Tell",
-			"name": "pds-twx-platform-postgres-9-5-0-influx-",
+			"name": "pds-twx-analytic-descriptive-9-5-0-",
 			"platform": "linux",
 			"categories": [
 				"ThingWorx",
