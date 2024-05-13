@@ -3,6 +3,50 @@
 	"templates": [
 		{
 			"type": 3,
+			"title": "ThingWorx Analytic Descriptive 9.5.0",
+			"description": "PTC ThingWorx Analytic Descriptive Docker - Image template created by Fredrik Tell",
+			"name": "pds-twx-platform-postgres-9-5-0-influx-",
+			"platform": "linux",
+			"categories": [
+				"ThingWorx",
+				"Analytic",
+				"Descriptive"
+			],
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-twx-analytic-descriptive-9-5-0.yml"
+			},
+			"env": [
+				{
+					"name": "THINGWORX_APPLICATION_KEY",
+					"label": "ThingWorx Application Key",
+					"description": "Application key ID from target ThingWorx, used to connect."
+				},
+				{
+					"name": "THINGWORX_HOSTNAME",
+					"label": "ThingWorx Hostname",
+					"description": "Hostname or IP of ThingWorx server"
+				},
+				{
+					"name": "THINGWORX_PORT",
+					"label": "ThingWorx Port",
+					"description": "Port to ThingWorx instance",
+					"default": "80"
+				},
+				{
+					"name": "THINGWORX_ISSECURE",
+					"label": "ThingWorx SSL",
+					"description": "true/false (default: false)",
+					"default": "false"
+				}
+			],
+			"ports": [
+				"9301/tcp"
+			]
+		},
+		{
+			"type": 3,
 			"title": "Influx - Latest",
 			"description": "Influx Docker - Time series database",
 			"name": "pds-twx-influx-",
