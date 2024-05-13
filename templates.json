@@ -12,7 +12,7 @@
 				"Analytic",
 				"Descriptive"
 			],
-			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxAnalyticDescriptive.png",
 			"repository": {
 				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
 				"stackfile": "docker-compose-twx-analytic-descriptive-9-5-0.yml"
