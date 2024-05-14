@@ -3,6 +3,50 @@
 	"templates": [
 		{
 			"type": 3,
+			"title": "ThingWorx Analytic Server 9.5.0.4",
+			"description": "PTC ThingWorx Analytic Server Docker - Image template created by Fredrik Tell",
+			"name": "pds-twx-analytic-server-9-5-0-4-",
+			"platform": "linux",
+			"categories": [
+				"ThingWorx",
+				"Analytic",
+				"Server"
+			],
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxAnalyticDescriptive.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-twx-analytic-server-9-5-0-4.yml"
+			},
+			"env": [
+				{
+					"name": "THINGWORX_APPLICATION_KEY",
+					"label": "ThingWorx Application Key",
+					"description": "Application key ID from target ThingWorx, used to connect."
+				},
+				{
+					"name": "THINGWORX_HOSTNAME",
+					"label": "ThingWorx Hostname",
+					"description": "Hostname or IP of ThingWorx server"
+				},
+				{
+					"name": "THINGWORX_PORT",
+					"label": "ThingWorx Port",
+					"description": "Port to ThingWorx instance",
+					"default": "80"
+				},
+				{
+					"name": "THINGWORX_ISSECURE",
+					"label": "ThingWorx SSL",
+					"description": "true/false (default: false)",
+					"default": "false"
+				}
+			],
+			"ports": [
+				"9101/tcp"
+			]
+		},
+		{
+			"type": 3,
 			"title": "ThingWorx Analytic Descriptive 9.5.0",
 			"description": "PTC ThingWorx Analytic Descriptive Docker - Image template created by Fredrik Tell",
 			"name": "pds-twx-analytic-descriptive-9-5-0-",
