@@ -159,7 +159,7 @@
 			"id": 5,
 			"type": 3,
 			"title": "ThingWorx Postgres 9.7.0",
-			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION - TESTING",
 			"note": "",
 			"categories": [
 				"ThingWorx",
