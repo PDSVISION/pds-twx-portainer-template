@@ -1,0 +1,1404 @@
+{
+	"version": "3",
+	"templates": [
+		{
+			"id": 1,
+			"type": 3,
+			"title": "ThingWorx Analytic Server 9.5.0.4",
+			"description": "PTC ThingWorx Analytic Server Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Analytic",
+				"Server"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxAnalyticDescriptive.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-twx-analytic-server-9-5-0-4.yml"
+			},
+			"env": [
+				{
+					"name": "THINGWORX_APPLICATION_KEY",
+					"label": "ThingWorx Application Key",
+					"description": "Application key ID from target ThingWorx, used to connect."
+				},
+				{
+					"name": "THINGWORX_HOSTNAME",
+					"label": "ThingWorx Hostname",
+					"description": "Hostname or IP of ThingWorx server"
+				},
+				{
+					"name": "THINGWORX_PORT",
+					"label": "ThingWorx Port",
+					"description": "Port to ThingWorx instance",
+					"default": "80"
+				},
+				{
+					"name": "THINGWORX_ISSECURE",
+					"label": "ThingWorx SSL",
+					"description": "true/false (default: false)",
+					"default": "false"
+				}
+			],
+			"ports": [
+				"9101/tcp"
+			]
+		},
+		{
+			"id": 2,
+			"type": 3,
+			"title": "ThingWorx Analytic Descriptive 9.5.0",
+			"description": "PTC ThingWorx Analytic Descriptive Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Analytic",
+				"Descriptive"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxAnalyticDescriptive.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-twx-analytic-descriptive-9-5-0.yml"
+			},
+			"env": [
+				{
+					"name": "THINGWORX_APPLICATION_KEY",
+					"label": "ThingWorx Application Key",
+					"description": "Application key ID from target ThingWorx, used to connect."
+				},
+				{
+					"name": "THINGWORX_HOSTNAME",
+					"label": "ThingWorx Hostname",
+					"description": "Hostname or IP of ThingWorx server"
+				},
+				{
+					"name": "THINGWORX_PORT",
+					"label": "ThingWorx Port",
+					"description": "Port to ThingWorx instance",
+					"default": "80"
+				},
+				{
+					"name": "THINGWORX_ISSECURE",
+					"label": "ThingWorx SSL",
+					"description": "true/false (default: false)",
+					"default": "false"
+				}
+			],
+			"ports": [
+				"9301/tcp"
+			]
+		},
+		{
+			"id": 3,
+			"type": 3,
+			"title": "Influx - Latest",
+			"description": "Influx Docker - Time series database",
+			"note": "",
+			"categories": [
+				"Influx"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/Influx.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-influx-latest.yml"
+			},
+			"ports": [
+				"8086/tcp"
+			]
+		},
+		{
+			"id": 4,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.5.0 - Influx",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-5-0-influx.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"8086/tcp"
+			]
+		},
+		{
+			"id": 5,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.7.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-7-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 6,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.6.1",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-6-1.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 7,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.6.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-6-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 8,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.5.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-5-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 9,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.5.0 - APPS",
+			"description": "PTC ThingWorx Docker - Image template for PTC APPS with separate MSSQL, created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres",
+				"Apps"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-5-0-apps.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 10,
+			"type": 3,
+			"title": "ThingWorx H2 9.4.4",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-4-4.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 11,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.4.4",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-4-4.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 12,
+			"type": 3,
+			"title": "ThingWorx H2 9.4.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-4-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 13,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.4.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-4-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 14,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.3.9 - CWC",
+			"description": "PTC ThingWorx Docker - Image template for CWC created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres",
+				"Apps"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-3-9-cwc.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 15,
+			"type": 3,
+			"title": "ThingWorx MSSQL 9.3.7",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"MSSQL"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-mssql-9-3-7.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 16,
+			"type": 3,
+			"title": "ThingWorx H2 9.3.7",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-3-7.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 17,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.3.7",
+			"description": "PTC ThingWorx Docker - Image template created by Duan Gauche",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-3-7.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 18,
+			"type": 3,
+			"title": "ThingWorx H2 9.3.5",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-3-5.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 19,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.3.4",
+			"description": "PTC ThingWorx Docker - Image template created by Duan Gauche",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-3-4.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 20,
+			"type": 3,
+			"title": "ThingWorx H2 9.3.2",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-3-2.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 21,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.3.2",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-3-2.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 22,
+			"type": 3,
+			"title": "ThingWorx MSSQL 9.3.2",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"MSSQL"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-mssql-9-3-2.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 23,
+			"type": 3,
+			"title": "ThingWorx H2 9.3.1",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-3-1.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 24,
+			"type": 3,
+			"title": "ThingWorx H2 9.3.0",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-3-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 25,
+			"type": 3,
+			"title": "ThingWorx H2 9.2.10",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-2-10.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 26,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.2.10",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-2-10.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 27,
+			"type": 3,
+			"title": "ThingWorx H2 9.2.7",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-2-7.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 28,
+			"type": 3,
+			"title": "ThingWorx H2 9.1.11",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-1-11.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 29,
+			"type": 3,
+			"title": "ThingWorx Postgres 9.1.1",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"Postgres"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-postgres-9-1-1.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 30,
+			"type": 3,
+			"title": "ThingWorx H2 9.0.16",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-9-0-16.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 31,
+			"type": 3,
+			"title": "ThingWorx H2 8.5.0",
+			"description": "PTC ThingWorx Docker - Image template created by Fredrik Tell",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"H2"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-h2-8-5-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
+		},
+		{
+			"id": 32,
+			"type": 3,
+			"title": "PTC Kepware Edge 1.6.250.0",
+			"description": "PTC Kepware Edge Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"Kepware"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCKepwareLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-kepware-edge-docker-compose",
+				"stackfile": "pds-kepware-edge-docker-compose-1-6-250-0.yml"
+			},
+			"env": [
+				{
+					"name": "EDGEADMINPW",
+					"label": "Admin password",
+					"description": "Password used for the Administrator",
+					"default": "kepwareedgevision"
+				}
+			],
+			"ports": [
+				"57513/tcp",
+				"49330/tcp"
+			]
+		}
+	]
+}
