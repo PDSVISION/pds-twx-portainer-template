@@ -1399,6 +1399,35 @@
 				"57513/tcp",
 				"49330/tcp"
 			]
-		}
+		},
+		{
+			"id": 33,
+			"type": 1,
+			"title": "Grafana",
+			"description": "Metrics Graphing Tool",
+			"logo": "https://raw.githubusercontent.com/grafana/grafana/main/docs/logo-horizontal.png",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"categories": [
+			  "Dashboardserver"
+			],
+			"image": "grafana/grafana:latest",
+			"ports": [
+			  "3000/tcp"
+			],
+			"network": "bridge",
+			"volumes": [
+			  {
+				"container": "/etc/grafana/grafana.ini"
+			  },
+			  {
+				"container": "/var/lib/grafana"
+			  },
+			  {
+				"container": "/var/log/grafana"
+			  }
+			],
+			"maintainer": " https://github.com/mycroftwilde/portainer_templates/"
+		  }
 	]
 }
