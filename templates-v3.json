@@ -1399,6 +1399,51 @@
 				"57513/tcp",
 				"49330/tcp"
 			]
+		},
+		{
+			"id": 33,
+			"type": 3,
+			"title": "ThingWorx MSSQL 9.7.0",
+			"description": "PTC ThingWorx Docker - Image template created by PDSVISION",
+			"note": "",
+			"categories": [
+				"ThingWorx",
+				"Base",
+				"MSSQL"
+			],
+			"platform": "linux",
+			"logo": "https://github.com/PDSVISION/pds-twx-portainer-template/raw/main/PTCThingWorxLogo.png",
+			"repository": {
+				"url": "https://github.com/PDSVISION/pds-twx-docker-compose",
+				"stackfile": "docker-compose-mssql-9-7-0.yml"
+			},
+			"env": [
+				{
+					"name": "LS_USERNAME",
+					"label": "PTC Username",
+					"description": "Username used to retrive license."
+				},
+				{
+					"name": "LS_PASSWORD",
+					"label": "PTC Password",
+					"description": "Password used to retrive license."
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "Admin Password",
+					"description": "Password used for the Administrator",
+					"default": "thingworxvision"
+				},
+				{
+					"name": "METRICS_PASSWORD",
+					"label": "Metric Password",
+					"description": "Password used for the Metrics user",
+					"default": "thingworxvision"
+				}
+			],
+			"ports": [
+				"80/tcp"
+			]
 		}
 	]
 }
