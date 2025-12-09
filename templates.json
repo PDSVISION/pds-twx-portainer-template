@@ -25,7 +25,7 @@
 		      "default": "Developer"
 		    },
 		    {
-		      "name": "SA_PASSWORD",
+		      "name": "MSSQL_SA_PASSWORD",
 		      "label": "SA Password",
 		      "default": "ChangeMeStrongPassword123!"
 		    },
@@ -36,11 +36,7 @@
 		    }
 		  ],
 		  "ports": [
-		    {
-		      "containerPort": 1433,
-		      "hostPort": 1433,
-		      "protocol": "tcp"
-		    }
+  			"1433:1433/tcp"
 		  ],
 		  "volumes": [
 		    { "container": "/var/opt/mssql", "bind": "mssql_data" },
