@@ -2,6 +2,52 @@
 	"version": "2",
 	"templates": [
 		{
+		  "type": 1,
+		  "title": "Microsoft SQL Server - Latest",
+		  "description": "Official Microsoft SQL Server container",
+		  "name": "pds-mssql-latest",
+		  "platform": "linux",
+		  "categories": [
+		    "SQLServer",
+		    "Database"
+		  ],
+		  "logo": "https://raw.githubusercontent.com/microsoft/mssql-docker/master/linux/logo.png",
+		  "image": "mcr.microsoft.com/mssql/server:latest",
+		  "env": [
+		    {
+		      "name": "ACCEPT_EULA",
+		      "label": "Accept EULA",
+		      "default": "Y"
+		    },
+		    {
+		      "name": "MSSQL_PID",
+		      "label": "SQL Server Edition",
+		      "default": "Developer"
+		    },
+		    {
+		      "name": "SA_PASSWORD",
+		      "label": "SA Password",
+		      "default": "ChangeMeStrongPassword123!"
+		    },
+		    {
+		      "name": "MSSQL_TCP_PORT",
+		      "label": "SQL Server Port",
+		      "default": "1433"
+		    }
+		  ],
+		  "ports": [
+		    {
+		      "containerPort": 1433,
+		      "hostPort": 1433,
+		      "protocol": "tcp"
+		    }
+		  ],
+		  "volumes": [
+		    { "container": "/var/opt/mssql", "bind": "mssql_data" },
+		    { "container": "/var/opt/mssql/backups", "bind": "mssql_backups" }
+		  ]
+		},
+		{
 			"type": 3,
 			"title": "ThingWorx Analytic Server 9.5.0.4",
 			"description": "PTC ThingWorx Analytic Server Docker - Image template created by Fredrik Tell",
