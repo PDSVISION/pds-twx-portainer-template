@@ -3,13 +3,12 @@
 	"templates": [
 		{
 		  "type": 1,
-		  "title": "Microsoft SQL Server - Latest",
-		  "description": "Official Microsoft SQL Server container",
+		  "title": "Microsoft SQL Server for Windchill - Latest",
+		  "description": "Official Microsoft SQL Server container designed for Windchill",
 		  "name": "pds-mssql-latest",
 		  "platform": "linux",
 		  "categories": [
-		    "SQLServer",
-		    "Database"
+		    "SQLServer"
 		  ],
 		  "logo": "https://raw.githubusercontent.com/microsoft/mssql-docker/master/linux/logo.png",
 		  "image": "mcr.microsoft.com/mssql/server:latest",
@@ -33,6 +32,11 @@
 		      "name": "MSSQL_TCP_PORT",
 		      "label": "SQL Server Port",
 		      "default": "1433"
+		    },
+			{
+		      "name": "MSSQL_COLLATION",
+		      "label": "Instance collation",
+		      "default": "Latin1_General_100_CS_AS_SC"
 		    }
 		  ],
 		  "ports": [
